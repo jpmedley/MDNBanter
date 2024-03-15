@@ -1,0 +1,3 @@
+interface PropertiesSetLikeReadonly {
+    [RuntimeEnabled=RTEExperimental] readonly setlike<MedleyFace>;
+};

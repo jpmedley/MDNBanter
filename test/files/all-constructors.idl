@@ -1,0 +1,12 @@
+/*
+ * Copyright 2024 Jospeh P Medley
+ */
+
+[
+    Exposed=Window,
+    ActiveScriptWrappable
+] interface AllConstructors {
+    constructor();
+    constructor(DOMString family, (DOMString or ArrayBuffer or ArrayBufferView) source, optional FontFaceDescriptors descriptors);
+    [RaisesException=Setter, SetterCallWith=ExecutionContext] attribute DOMString family;
+};

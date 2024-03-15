@@ -1,0 +1,4 @@
+interface NoSetters {
+
+  attribute octet notDeleter;
+};

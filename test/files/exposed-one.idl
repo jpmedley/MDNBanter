@@ -1,0 +1,6 @@
+[
+    Exposed=Window,
+    ImplementedAs=SVGTransformTearOff
+] interface ExposedOne {
+    readonly attribute FontFaceSetLoadStatus status;
+};

@@ -1,0 +1,3 @@
+interface MethodArgCount : EventTarget {
+    [RaisesException] boolean check(DOMString font, optional DOMString text = " ");
+};

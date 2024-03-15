@@ -1,0 +1,3 @@
+interface NoIterable {
+  attribute octet notDeleter;
+};

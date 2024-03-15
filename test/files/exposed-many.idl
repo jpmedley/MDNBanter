@@ -1,0 +1,10 @@
+/*
+ * Copyright 2024 Jospeh P Medley
+ */
+
+[
+    Exposed=(Window,Worker),
+    ImplementedAs=SVGTransformTearOff
+] interface ExposedMany {
+    readonly attribute FontFaceSetLoadStatus status;
+};

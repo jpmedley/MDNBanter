@@ -1,0 +1,8 @@
+[
+    RuntimeEnabled=OTEExperimental,
+    Exposed=Window,
+    ActiveScriptWrappable
+] interface ExtendedAttribsReversed {
+    constructor();
+readonly attribute FontFaceSetLoadStatus status;
+};

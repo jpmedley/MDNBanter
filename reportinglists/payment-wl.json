@@ -1,0 +1,17 @@
+{
+  "reportingList": [
+    "AbortPaymentEvent",
+    "CanMakePaymentEvent",
+    "PaymentAddress",
+    "PaymentComplete",
+    "PaymentDelegation",
+    "PaymentInstruments",
+    "PaymentManager",
+    "PaymentMethodChangeEvent",
+    "PaymentRequest",
+    "PaymentRequestEvent",
+    "PaymentRequestUpdateEvent",
+    "PaymentResponse",
+    "PaymentShippingType"
+  ]
+}

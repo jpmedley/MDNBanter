@@ -1,0 +1,11 @@
+/*
+ * Copyright 2024 Jospeh P Medley
+ */
+
+[
+    Exposed=Window,
+    ActiveScriptWrappable
+] interface ConstructorNoArgs {
+    constructor();
+    [RaisesException=Setter, SetterCallWith=ExecutionContext] attribute DOMString family;
+};

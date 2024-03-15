@@ -1,0 +1,70 @@
+{
+  "name": "@jpmedley/mdn-helper",
+  "version": "1.1.1",
+  "description": "Removes repetitive work of creating MDN boilerplate markup and text.",
+  "main": "index.js",
+  "scripts": {
+    "boilerplates": "node app_BoilerplateBuilder.js",
+    "bp": "node app_BoilerplateBuilder.js",
+    "burn": "node app_Burner.js",
+    "bi": "node app_Builder.js",
+    "build": "node app_Builder.js",
+    "clean": "node app_Cleaner.js",
+    "config": "node app_Config.js",
+    "css": "node app_Manual.js css",
+    "find": "node app_Finder.js",
+    "fi": "node app_Finder.js idl",
+    "header": "node app_Manual.js header",
+    "help": "node app_Help.js",
+    "interface": "node app_Manual.js interface",
+    "report": "node app_Burner.js",
+    "show-versions": "node app_UpdateData.js show",
+    "sv": "node app_UpdateData.js show",
+    "update": "node app_updateData.js",
+    "update-data": "node app_UpdateData.js",
+    "ud": "node app_UpdateData.js",
+    "reportinglists": "node app_Burner.js chrome -w",
+    "show-reportinglists": "ls reportinglists"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpmedley/mdn-helper.git"
+  },
+  "keywords": [
+    "MDN",
+    "contributing"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "node presubmit.js"
+    }
+  },
+  "author": "Joseph Medley <medleyj64119@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jpmedley/mdn-helper/issues"
+  },
+  "dependencies": {
+    "@mdn/browser-compat-data": "^4.1.9",
+    "config": "^1.31.0",
+    "download": "^8.0.0",
+    "enquirer": "2.3.5",
+    "husky": "^1.3.1",
+    "json5": "^2.1.3",
+    "jsonschema": "^1.4.0",
+    "mocha": "^8.4.0",
+    "node.extend": "^2.0.2",
+    "radio-symbol": "^2.0.0",
+    "readline": "^1.3.0",
+    "shelljs": "^0.8.4",
+    "tar": "^6.1.0",
+    "winston": "^3.3.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/jpmedley/mdn-helper#readme"
+}

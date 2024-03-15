@@ -1,0 +1,5 @@
+interface SetterNamedOnly {
+  [RaisesException] setter void setItem(DOMString key, DOMString value);
+
+  attribute octet notDeleter;
+};

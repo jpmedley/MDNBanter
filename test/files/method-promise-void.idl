@@ -1,0 +1,9 @@
+[
+    SecureContext,
+    Exposed=Window
+] interface MethodPromiseVoid : EventTarget {
+    [MeasureAs=AsyncClipboardAPIWrite,
+     CallWith=ScriptState,
+     RuntimeEnabled=AsyncClipboard
+    ] Promise<void> write(record<DOMString, Blob> data);
+};

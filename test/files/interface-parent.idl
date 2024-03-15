@@ -1,0 +1,3 @@
+interface InterfaceParent : EventTarget {
+    readonly attribute FontFaceSetLoadStatus status;
+};

@@ -1,0 +1,4 @@
+interface IterableInterface {
+    iterable<CSSUnparsedSegment>;
+    [RuntimeEnabled=RTEExperimental] iterable<CSSParsedSegment>;
+};

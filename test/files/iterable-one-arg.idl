@@ -1,0 +1,5 @@
+interface IterableOne {
+  iterable<CSSUnparsedSegment>;
+
+  attribute octet notDeleter;
+};

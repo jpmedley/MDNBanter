@@ -1,0 +1,2 @@
+Interface|User Agent Count|Engine Count|MDN Has Compabibility Data|MDN Page Exists|Expected URL
+key|browserCount|engineCount|bcd|mdn_exists|mdn_url

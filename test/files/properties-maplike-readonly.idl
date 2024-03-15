@@ -1,0 +1,5 @@
+interface PropertiesMaplikeReadonly {
+    [RuntimeEnabled=RTEExperimental] attribute FontFaceLoadStatus status;
+    [RuntimeEnabled=RTEExperimental] readonly attribute boolean raw;
+    [RuntimeEnabled=RTEExperimental] readonly maplike<DOMString, object>;
+};

@@ -1,0 +1,5 @@
+[
+    RuntimeEnabled=OTEExperimental
+] interface InterfaceOT {
+    readonly attribute FontFaceSetLoadStatus status;
+};

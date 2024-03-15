@@ -1,0 +1,3 @@
+partial interface InterfacePartial {
+    readonly attribute DocumentTimeline timeline;
+};

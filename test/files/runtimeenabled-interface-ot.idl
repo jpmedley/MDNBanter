@@ -1,0 +1,8 @@
+[
+    Exposed=Window,
+    ActiveScriptWrappable,
+    RuntimeEnabled=OTEExperimental
+] interface RuntimeOT {
+    constructor();
+readonly attribute FontFaceSetLoadStatus status;
+};

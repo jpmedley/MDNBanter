@@ -1,0 +1,3 @@
+interface ReadonlyProperty {
+    readonly attribute FontFaceLoadStatus status;
+};

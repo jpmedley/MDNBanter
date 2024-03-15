@@ -1,0 +1,3 @@
+interface PropertiesSetlike {
+    [RuntimeEnabled=RTEExperimental] setlike<MedleyFace>;
+};

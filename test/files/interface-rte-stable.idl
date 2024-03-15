@@ -1,0 +1,5 @@
+[
+    RuntimeEnabled=RTEStable
+] interface InterfaceStable {
+    readonly attribute FontFaceSetLoadStatus status;
+};

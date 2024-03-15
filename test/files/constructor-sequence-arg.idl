@@ -1,0 +1,11 @@
+/*
+ * Copyright 2024 Jospeh P Medley
+ */
+
+[
+    Exposed=Window,
+    ActiveScriptWrappable
+] interface ConstructorSeqArgs : CSSStyleValue {
+    constructor(sequence<CSSUnparsedSegment> members);
+    readonly attribute unsigned long length;
+};
