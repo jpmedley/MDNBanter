@@ -1,4 +1,4 @@
-# mdn-helper
+# MDNBanter
 Removes repetitive work of creating MDN markup and text. Much of the work of creating a new MDN reference page is in creating boilerplate such as headings, specification tables, and standardized intro text. Once this is created API specific content must be added to the boilerplate. A significant portion of that content is duplicated between one or more pages of the API.
 
 The current version only handles JavaScript APIs.
@@ -9,15 +9,15 @@ The current version only handles JavaScript APIs.
 
 1. Clone this repository.
 
-   `git clone https://github.com/jpmedley/mdn-helper.git`
+   `git clone https://github.com/jpmedley/MDNBanter.git`
 
-1. Change to the `mdn-helper` directory and run `npm install`.
+1. Change to the `MDNBanter` directory and run `npm install`.
 
 1. Enter `npm run update-data` to download data files needed for the `build`, `find`, and `report` commands. This script will run automatically on first use if it has been more than twenty-four hours since its last run.
 
 ## Usage
 
-From within the mdn-helper direcory:
+From within the MDNBanter direcory:
 
   `npm run <command> [<arguments>] -- [<flags>]`
 
@@ -52,7 +52,7 @@ Generates a csv listing BCD entries where the browser value is either null or mi
 
 ### clean
 
-Deletes selected folders from the `*path/to*/mdn-helper/out/` directory.
+Deletes selected folders from the `*path/to*/MDNBanter/out/` directory.
 
 **Syntax:** `clean`
 
@@ -69,7 +69,7 @@ display whether they exist.
 
 ### header
 
-Creates pages for the provided HTTP header and directive names names. The results are written to the `*path/to*/mdn-helper/out/` directory. To build directive plages only, exclude the -H or --header flag.
+Creates pages for the provided HTTP header and directive names names. The results are written to the `*path/to*/MDNBanter/out/` directory. To build directive plages only, exclude the -H or --header flag.
 
 **Syntax:** <code>header -- -n _headerName_ [(-H | --header)] [(-d | --directive) _directiveName_]</code>
 
@@ -83,7 +83,7 @@ At least one of the following:
 
 ### interface
 
-Creates one or more individual boilerplates for JavaScript platform APIs. The results are written to the `*path/to*/mdn-helper/out/` directory. The syntax description makes this look more complicated than it is. This can be summarized as `interface -n _interfaceName_` followed by commands for one or more individual pages. For example, the following would create a boilerplate for a property:
+Creates one or more individual boilerplates for JavaScript platform APIs. The results are written to the `*path/to*/MDNBanter/out/` directory. The syntax description makes this look more complicated than it is. This can be summarized as `interface -n _interfaceName_` followed by commands for one or more individual pages. For example, the following would create a boilerplate for a property:
 
 `npm run interface -n CSSTransformValue -p length`
 
@@ -140,9 +140,9 @@ When installed, no configuration is needed. [Instructions are provided](help/CON
 
 ## Data Sources
 
-MDN Helper uses Chrome as its starting point because of the ease of reading API surfaces from its source code as compared to other browsers and because Chrome is often the first browser to implement new web platform features. (If you know of an easily downloaded data set that is a reliable proxy for the features of another browser, please contact me at the email address in my GitHub profile.)
+MDNBanter uses Chrome as its starting point because of the ease of reading API surfaces from its source code as compared to other browsers and because Chrome is often the first browser to implement new web platform features. (If you know of an easily downloaded data set that is a reliable proxy for the features of another browser, please contact me at the email address in my GitHub profile.)
 
-MDN Helper does not use data in web platform specs because working out which version of a spec to use as a starting point is not something that can be done algorithmically. Also, this tool was created to assist with new web platform features. For such featues, the first implementation may not include every feature described in a spec. Those unimplemented features can and do go through design changes before implementation.
+MDNBanter does not use data in web platform specs because working out which version of a spec to use as a starting point is not something that can be done algorithmically. Also, this tool was created to assist with new web platform features. For such featues, the first implementation may not include every feature described in a spec. Those unimplemented features can and do go through design changes before implementation.
 
 If you need to document a new feature that was implemented by a browser other than Chrome, see [Documenting New Features](help/BUILDING-PAGES.md#documenting-new-features).
 

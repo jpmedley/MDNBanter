@@ -268,7 +268,7 @@ function _printHelp() {
 function _printWelcome() {
   console.clear();
   console.log("=".repeat(80));
-  console.log(" ".repeat(30) + "Welcome to mdn-helper" + " ".repeat(29));
+  console.log(" ".repeat(30) + "Welcome to MDNBanter" + " ".repeat(29));
   console.log("=".repeat(80));
 }
 

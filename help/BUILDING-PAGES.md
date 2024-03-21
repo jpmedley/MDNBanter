@@ -21,7 +21,7 @@ The `build` command helps you rapidly build JSON and HTML boilerplates for undoc
    npm run build idl clipboard
    ```
 
-   MDN Helper searches for interfaces containing the string you entered prompts you with a list.
+   MDNBanter searches for interfaces containing the string you entered prompts you with a list.
 
    **Note:** If you know a feature is supported in Chrome, but it does not appear in this list, see [Documenting New Features](#documenting-new-features) below.
 
@@ -29,8 +29,8 @@ The `build` command helps you rapidly build JSON and HTML boilerplates for undoc
 
 1. It checks for the existence of a JSON file for the interface in the [Browser compatibility Database](https://github.com/mdn/browser-compat-data). If the file does not exist, it creates a blank JSON file.
   * The JSON file contains only false values. You will need to supply version numbers. 
-  * MDN Helper writes the JSON file to a subfolder of `Desktop/out`.
-1. For the interface and each of its members, MDN Helper pings the expected URL as listed in the Browser compatibility Database.
+  * MDNBanter writes the JSON file to a subfolder of `Desktop/out`.
+1. For the interface and each of its members, MDNBanter pings the expected URL as listed in the Browser compatibility Database.
 
 1. If pages are found to be missing for the selected interface, boilerplates will be written to the output directory using the same structure as required by "MDN/Content". If you used the interactive flag (`-i` or `--interactive`) you will be asked questions to gather information needed for the interface. This is no recommended for new MDN writers.
 
@@ -52,12 +52,12 @@ Do this with either the `-b` or `--bcdOnly` flag. For example:
 
 ## Documenting New Features
 
-You may find that features behind a [runtime flag](https://www.howtogeek.com/703039/how-to-enable-google-chrome-flags-to-test-beta-features/) or in an [origin trial](https://web.dev/origin-trials/) in Chrome are not surfaced in the `build` or `find` commands. MDN Helper uses Chrome as its starting point because of the ease of reading API surfaces from its source code as compared to other browsers and because Chrome is often the first browser to implement new web platform features. 
+You may find that features behind a [runtime flag](https://www.howtogeek.com/703039/how-to-enable-google-chrome-flags-to-test-beta-features/) or in an [origin trial](https://web.dev/origin-trials/) in Chrome are not surfaced in the `build` or `find` commands. MDNBanter uses Chrome as its starting point because of the ease of reading API surfaces from its source code as compared to other browsers and because Chrome is often the first browser to implement new web platform features. 
 
 * If the feature is not yet available in another browser, it's too early to be documented on MDN. These statuses often indicate that aspects of a feature's design are still being resolved or tested and may change before the feature becomes part of the web platform. For early adoptors, resources can often be found in a feature's [spec repo](https://github.com/WICG/idle-detection). This includes the spec's explainer and sometimes MDN drafts specifically written for earlier adoptors.
   **Note:** If you're documenting a new spec that has an MDN draft, you're encouraged to use that draft as the starting place for the MDN pages. These drafts conform to MDN standards and are written by either the spec designer or implementor.
 
-* If the feature is available in another browser, you can tell MDN Helper to ignore that it is behind a flag or in an origin trial in Chrome by using the `-f` and `-o` flags. For example:
+* If the feature is available in another browser, you can tell MDNBanter to ignore that it is behind a flag or in an origin trial in Chrome by using the `-f` and `-o` flags. For example:
 
 ```bash
 npm run build idl clip -- -f -o

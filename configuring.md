@@ -1,4 +1,4 @@
-# Configuring mdn-helper
+# Configuring MDNBanter
 
 ## Configuring for engineering users
 
