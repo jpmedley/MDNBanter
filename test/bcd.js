@@ -23,7 +23,7 @@ describe('BCD', () => {
   describe('getBrowsers()', () => {
     it('Confirms that the key \'Event\' returns 14 browsers', () => {
       const browsers = bcd.getBrowsers('Event');
-      assert.strictEqual(browsers.length, 14);
+      assert.strictEqual(browsers.length, 15);
     });
     it('Confirms that the key \'Burnable\' returns null', () => {
       const browsers = bcd.getBrowsers('Burnable');

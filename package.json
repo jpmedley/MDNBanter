@@ -18,6 +18,7 @@
     "help": "node app_Help.js",
     "interface": "node app_Manual.js interface",
     "test": "mocha",
+    "test-brk": "mocha --inspect-brk",
     "report": "node app_Burner.js",
     "show-versions": "node app_UpdateData.js show",
     "sv": "node app_UpdateData.js show",
