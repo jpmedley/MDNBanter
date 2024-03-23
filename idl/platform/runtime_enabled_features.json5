@@ -268,6 +268,13 @@
       implied_by: ["Fledge", "Parakeet"],
       public: true,
     },
+    // Adjust the end of the next paragraph if the end position for the
+    // paragraph is updated while moving the paragraph. See
+    // https://crbug.com/329121649
+    {
+      name: "AdjustEndOfNextParagraphIfMovedParagraphIsUpdated",
+      status: "stable",
+    },
     {
       name: "AdTagging",
       public: true,
@@ -299,6 +306,10 @@
       name: "AndroidDownloadableFontsMatching",
       base_feature: "none",
       public: true,
+    },
+    {
+      name: "AnimationProgressAPI",
+      status: "test",
     },
     {
       name: "AnimationWorklet",
@@ -445,12 +456,6 @@
       },
     },
     {
-      // Shipping in M122.  Flag should be removed after M122 has been
-      // shipping to stable for a few weeks.
-      name: "BdiElementDirInheritance",
-      status: "stable",
-    },
-    {
       // There are two different code changes guarded by this feature. Both
       // are about triggering a beforeunload cancel dialog and need adoption
       // from developers.
@@ -495,10 +500,6 @@
     {
       name: "BlockingFocusWithoutUserActivation",
       status: "experimental",
-    },
-    {
-      name: "BlockRubyWrappingInlineRuby",
-      status: "stable",
     },
     // crbug.com/1147998: Mouse and Pointer boundary event dispatch (i.e. dispatch
     // of enter, leave, over, out events) tracks DOM node removal to fix event
@@ -713,10 +714,6 @@
     },
     {
       name: "CorsRFC1918",
-    },
-    {
-      name: "CounterStyleChangeShouleCollectInlines",
-      status: "stable",
     },
     {
       // Controls whether form elements may delay editor creation until layout.
@@ -1059,6 +1056,11 @@
     {
       name: "CSSSignRelatedFunctions",
       status: "experimental",
+    },
+    {
+      // A separate feature for testing compatibility, related to the work on
+      // https://chromestatus.com/feature/5196713071738880
+      name: "CSSSizingKeywordAnimation",
     },
     {
       // https://drafts.csswg.org/css-scroll-snap-2/#snap-events
@@ -1460,6 +1462,7 @@
     // When enabled, this allows users of DOMParser to do:
     // (new DOMParser()).parseFromString(...,{includeShadowRoots:true}).
     // This is being deprecated and removed: crbug.com/329330085.
+    // The fieldtrial_testing_config currently disables this feature for tests.
     {
       name: "DOMParserIncludeShadowRoots",
       status: "stable",
@@ -1469,7 +1472,7 @@
     // of any issues.
     {
       name: "DOMParserUsesHTMLFastPathParser",
-      status: "stable"
+      status: "test"
     },
     {
       name: "DOMPartsAPI",
@@ -1788,10 +1791,14 @@
       status: "stable",
     },
     {
+      name: "FledgeCreateAuctionNonceSynchronousResolution",
+      status: "stable",
+    },
+    {
       name: "FledgeCustomMaxAuctionAdComponents",
     },
     {
-      // Enables using a 'deprecatedRenderURLReplacements' field within the a
+      // Enables using a 'deprecatedRenderURLReplacements' field within the
       // Protected Audience ad auction config.
       name: "FledgeDeprecatedRenderURLReplacements"
     },
@@ -1815,6 +1822,11 @@
       status: "stable",
     },
     {
+      // Enables using a 'reportingTimeout' field within the Protected Audience
+      // ad auction config.
+      name: "FledgeReportingTimeout",
+    },
+    {
       name: "FledgeTrustedBiddingSignalsSlotSize",
       status: "stable",
     },
@@ -1835,10 +1847,6 @@
       status: "experimental",
       base_feature: "none",
       origin_trial_feature_name: "Focusgroup",
-    },
-    {
-      name: "FocusStyleInvalidationOnPageActivation",
-      status: "stable",
     },
     {
       name: "FontAccess",
@@ -2464,11 +2472,11 @@
       name: "MouseDragFromIframeOnCancelledMouseDown",
       status: "stable",
     },
-    // crbug.com/346473: Allow mouse-drag text selection even when mousemove
+    // crbug.com/40078978: Allow mouse-drag text selection even when mousemove
     // event is cancelled.
     {
       name: "MouseDragOnCancelledMouseMove",
-      status: "experimental",
+      status: "stable",
     },
     // crbug.com/1446498: This feature is being used for the deprecation of
     // Mutation Events.
@@ -2898,14 +2906,6 @@
       status: "experimental",
     },
     {
-      name: "PendingBeaconAPI",
-      origin_trial_feature_name: "PendingBeaconAPI",
-      origin_trial_allows_third_party: true,
-      public: true,
-      status: "experimental",
-      base_feature: "none",
-    },
-    {
       name: "PercentBasedScrolling",
       base_feature: "none",
       public: true,
@@ -3283,11 +3283,6 @@
       status: "stable",
     },
     {
-      // crbug.com/1493273
-      name: "RubyInlinify",
-      status: "stable",
-    },
-    {
       // crbug.com/324111880
       name: "RubyLineBreakable",
     },
@@ -3390,11 +3385,6 @@
       name: "SecurePaymentConfirmationDebug",
       base_feature: "none",
       public: true,
-    },
-    {
-      name: "SecurePaymentConfirmationExtensions",
-      public: true,
-      status: "stable",
     },
     {
       name: "SecurePaymentConfirmationOptOut",
@@ -4043,6 +4033,7 @@
     {
       // https://chromestatus.com/feature/5089552511533056
       name: "ViewTransitionTypes",
+      status: "experimental",
     },
     {
       name: "VisibilityCollapseColumn",
@@ -4149,16 +4140,6 @@
     {
       name: "WebAuth",
       status: "stable",
-    },
-    // Allow creation of WebAuth credentials in cross-origin contexts (as long
-    // as the 'publickey-credentials-create' permissions policy is set).
-    {
-      name: "WebAuthAllowCreateInCrossOriginFrame",
-      status: "stable",
-      // This feature is controlled from the Blink side, unless there is a
-      // Finch override of it for a kill-switch.
-      base_feature_status: "enabled",
-      copied_from_base_feature_if: "overridden",
     },
     // When enabled adds the authenticator attachment used for registration and
     // authentication to the public key credential response.
