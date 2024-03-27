@@ -21,7 +21,7 @@ describe('BCD', () => {
   });
 
   describe('getBrowsers()', () => {
-    it('Confirms that the key \'Event\' returns 14 browsers', () => {
+    it('Confirms that the key \'Event\' returns correct number of browsers', () => {
       const browsers = bcd.getBrowsers('Event');
       assert.strictEqual(browsers.length, 15);
     });
