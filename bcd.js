@@ -143,7 +143,9 @@ class BCD {
         versions.push('Not supported');
       }
     }
-    return versions.join(', ');
+    // TODO: Figure out whether this needs to return a string or an array.
+    // return versions.join(', ');
+    return versions;
   }
 
   getBrowsers(key, trunk = 'api') {
