@@ -3,6 +3,8 @@ Removes repetitive work of creating MDN markup and text. Much of the work of cre
 
 The current version only handles JavaScript APIs.
 
+**Note:** This project was recently forked from [MDN Helper](https://github.com/jpmedley/mdn-helper). This is to avoid any intellectual property entanglements created by my departure from Google. 
+
 ## Installation
 
 1. Install [node.js](https://nodejs.org), version 12 or later.
