@@ -17,6 +17,14 @@ The current version only handles JavaScript APIs.
 
 1. Enter `npm run update-data` to download data files needed for the `build`, `find`, and `report` commands. This script will run automatically on first use if it has been more than twenty-four hours since its last run.
 
+### Ubuntu on Windows
+
+When node is installed on Windows Subsystem for Linux (WSL), WSL2 2204.3.49.0, `npm.cmd` is invoked using a script file (`npm.psl`) rather than being invoked directly. At least one command line flag is consumed by the script file before the command line is passed to `npm.cmd`. (See [Scripts arguments starting with -- are removed](https://stackoverflow.com/questions/72259748/scripts-arguments-starting-with-are-removed))
+
+For example, for a search such as the following, the `-p` flag will not be passed to `npm.cmd`. Get around this by adding the following alias to your `.bashrc' file:
+
+`alias npm="npm --"`
+
 ## Usage
 
 From within the MDNBanter direcory:
