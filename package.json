@@ -50,7 +50,7 @@
     "url": "https://github.com/jpmedley/MDNBanter/issues"
   },
   "dependencies": {
-    "@mdn/browser-compat-data": "^5.5.19",
+    "@mdn/browser-compat-data": "^5.5.20",
     "config": "^1.31.0",
     "download": "^8.0.0",
     "enquirer": "2.3.5",
