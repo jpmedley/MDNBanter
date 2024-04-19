@@ -1,10 +1,7 @@
 ---
 title: [[shared:interface]].forEach()
 slug: Web/API/[[shared:interface]]/forEach
-tags:
-  - forEach
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].forEach
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

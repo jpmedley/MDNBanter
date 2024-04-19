@@ -1,9 +1,7 @@
 ---
 title: [[shared:interface]].[[property]]
 slug: Web/API/[[shared:interface]]/[[property]]
-tags:
-  - Property
-  - Reference
+page-type: web-api-instance-prop
 browser-compat: api.[[shared:interface]].[[property]]
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

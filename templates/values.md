@@ -1,10 +1,7 @@
 ---
 title: [[shared:interface]].values()
 slug: Web/API/[[shared:interface]]/values
-tags:
-  - values
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: [[shared:interface]].values
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

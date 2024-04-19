@@ -1,9 +1,7 @@
 ---
 title: [[shared:interface]].entries()
 slug: Web/API/[[shared:interface]]/entries
-tags:
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].entries
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

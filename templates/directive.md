@@ -1,11 +1,7 @@
 ---
 title: 'CSP: [[directive]]'
 slug: Web/HTTP/Headers/[[shared:header]]/[[directive]]
-tags:
-  - CSP
-  - Directive
-  - HTTP
-  - Reference
+page-type: http-header
 browser-compat: http.headers.[[shared:header]].[[directive]]
 ---
 {{HTTPSidebar}}

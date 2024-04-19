@@ -1,9 +1,7 @@
 ---
 title: [[shared:interface]].delete()
 slug: Web/API/[[shared:interface]]/delete
-tags:
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].delete
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

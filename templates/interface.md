@@ -1,9 +1,7 @@
 ---
 title: [[shared:interface]]
 slug: Web/API/[[shared:interface]]
-tags:
-  - Interface
-  - Reference
+page-type: web-api-interface
 browser-compat: api.[[shared:interface]]
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

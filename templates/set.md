@@ -1,10 +1,7 @@
 ---
 title: [[shared:interface]].set()
 slug: Web/API/[[shared:interface]]/set
-tags:
-  - set
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].set
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

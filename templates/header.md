@@ -1,9 +1,7 @@
 ---
 title: [[shared:header]]
 slug: Web/HTTP/Headers/[[shared:header]]
-tags:
-  - HTTP
-  - Reference
+page-type: http-header
 browser-compat: http.headers.[[shared:header]]
 ---
 {{HTTPSidebar}}

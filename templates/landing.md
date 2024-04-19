@@ -1,9 +1,7 @@
 ---
 title: [[shared:formalAPIName]]
 slug: Web/API/[[slug]]
-tags:
-  - Overview
-  - Reference
+page-type: web-api-overview
 browser-compat: api.[[shared:interface]]
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

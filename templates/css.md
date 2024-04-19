@@ -1,9 +1,7 @@
 ---
 title: [[selector]]
 slug: Web/CSS/[[selector]]
-tags:
-  - CSS
-  - Reference
+page-type: web-api-interface
 browser-compat: css.selectors.[[selector]]
 ---
 {{CSSRef}}

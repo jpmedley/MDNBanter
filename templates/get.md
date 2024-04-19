@@ -1,10 +1,7 @@
 ---
 title: [[shared:interface]].get()
 slug: Web/API/[[shared:interface]]/get
-tags:
-  - get
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].get
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

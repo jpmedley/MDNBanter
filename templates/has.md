@@ -1,10 +1,7 @@
 ---
 title: [[shared:interface]].has()
 slug: Web/API/[[shared:interface]]/has
-tags:
-  - has
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].has
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}

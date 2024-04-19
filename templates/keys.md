@@ -1,10 +1,7 @@
 ---
 title: [[shared:interface]].keys()
 slug: Web/API/[[shared:interface]]/keys
-tags:
-  - keys
-  - Method
-  - Reference
+page-type: web-api-instance-method
 browser-compat: api.[[shared:interface]].keys
 ---
 [[shared:isSecureContext]]{{DefaultAPISidebar("[[shared:sidebarMacro]]")}}
